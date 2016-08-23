@@ -1,5 +1,6 @@
 import * as observable from 'data/observable';
 import * as pages from 'ui/page';
+import {BadgeButton} from 'nativescript-badge-button';
 import {HelloWorldModel} from './main-view-model';
 
 // Event handler for Page "loaded" event attached in main-page.xml

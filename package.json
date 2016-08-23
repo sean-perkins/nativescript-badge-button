@@ -25,12 +25,15 @@
     "NativeScript",
     "JavaScript",
     "Android",
-    "iOS"
+    "iOS",
+    "Badge Button",
+    "BBBadgeBarButtonItem"
   ],
   "author": {
     "name": "Sean Perkins",
     "email": "sean@meetmaestro.com"
   },
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/sean-perkins/nativescript-badge-button/issues"
   },
