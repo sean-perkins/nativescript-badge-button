@@ -1,0 +1,7 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:BadgeButton="nativescript-badge-button" loaded="pageLoaded">
+  <StackLayout>
+    <Label text="Badge Button Plugin" class="message" textWrap="true"/>
+    <BadgeButton:BadgeButton />
+  </StackLayout>
+</Page>
