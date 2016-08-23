@@ -3,6 +3,10 @@
       <ActionBar title="NativeScript Badge Button" />
   <StackLayout>
     <Button text="Normal Button" />
-    <BadgeButton:BadgeButton text="Button with Badge" badgeValue="1" />
+    <BadgeButton:BadgeButton text="Button with Badge" badgeValue="1" badgeOriginX="450" />
+    <BadgeButton:BadgeButton text="Button with Badge BG Color" badgeValue="1" badgeOriginX="485" badgeBGColor="{{ purpleColor }}" />
+    <BadgeButton:BadgeButton text="Button with Badge Color" badgeValue="1" badgeOriginX="475" badgeBGColor="{{ greenColor }}" badgeTextColor="{{ yellowColor }}" />
+    <BadgeButton:BadgeButton text="Button with Badge String" badgeValue="WOW" badgeOriginX="475" />
+    <BadgeButton:BadgeButton text="Incremental Badge" badgeValue="{{ badgeIncrement }}" badgeOriginX="450" />
   </StackLayout>
 </Page>

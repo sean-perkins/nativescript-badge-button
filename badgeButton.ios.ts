@@ -5,10 +5,11 @@ declare var BBBadgeBarButtonItem: any;
 export class BadgeButton extends Button {
 
     private _iosBadgeButton: any;
+    private _lastBadgeOriginX: number = 0;
 
     constructor() {
         super();
-        this._iosBadgeButton = BBBadgeBarButtonItem.alloc().initWithCustomUIButton(this.ios);
+        this._iosBadgeButton = UIBarButtonItem.alloc().initWithCustomView(this.ios);
         /*
         Default Values
             badgeBGColor = redColor
@@ -16,11 +17,10 @@ export class BadgeButton extends Button {
             badgeFont = systemFontOfSize:12.0
             badgePadding = 6
             badgeMinSize = 8
-            badgeOriginX = 7
-            badgeOriginY = -9
+            badgeOriginX = 0
+            badgeOriginY = -4
             shouldHideBadgeAtZero = true
             shouldAnimateBadge = true
-            clipToBounds = false
         */
     }
 
@@ -30,14 +30,17 @@ export class BadgeButton extends Button {
 
     set badgeValue(badgeValue: string) {
         this._iosBadgeButton.badgeValue = badgeValue.toString();
+        if(this._lastBadgeOriginX) {
+            this._iosBadgeButton.badgeOriginX = this._lastBadgeOriginX;
+        }
     }
 
-    set badgeBGColor(badgeBGColor: UIColor) {
-        this._iosBadgeButton.badgeBGColor = badgeBGColor;
+    set badgeBGColor(badgeBGColor: any) {
+        this._iosBadgeButton.badgeBGColor = badgeBGColor.ios;
     }
 
-    set badgeTextColor(badgeTextColor: UIColor) {
-        this._iosBadgeButton.badgeTextColor = badgeTextColor;
+    set badgeTextColor(badgeTextColor: any) {
+        this._iosBadgeButton.badgeTextColor = badgeTextColor.ios;
     }
 
     set badgeFont(badgeFont: UIFont) {
@@ -54,6 +57,7 @@ export class BadgeButton extends Button {
 
     set badgeOriginX(badgeOriginX: number) {
         this._iosBadgeButton.badgeOriginX = badgeOriginX;
+        this._lastBadgeOriginX = badgeOriginX;
     }
 
     set badgeOriginY(badgeOriginY: number) {
