@@ -1,4 +1,7 @@
 # NativeScript Badge Button Plugin
+[![npm](https://img.shields.io/npm/v/nativescript-badge-button.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/nativescript-badge-button) 
+[![npm](https://img.shields.io/npm/dt/nativescript-badge-button.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/nativescript-badge-button)
+
 Creates a native UIButton with a badge component. Currently only supported on iOS. 
 
 ### Getting Started
