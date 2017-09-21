@@ -1,8 +1,8 @@
 {
   "name": "nativescript-badge-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NativeScript plugin for badges inside of buttons.",
-  "main": "badgeButton.js",
+  "main": "badgeButton",
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
