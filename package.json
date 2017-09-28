@@ -1,48 +1,50 @@
 {
-  "name": "nativescript-badge-button",
-  "version": "0.1.1",
-  "description": "NativeScript plugin for badges inside of buttons.",
-  "main": "badgeButton",
-  "typings": "index.d.ts",
-  "nativescript": {
-    "platforms": {
-      "android": "2.2.0",
-      "ios": "2.2.1"
-    }
-  },
-  "scripts": {
-    "build": "tsc",
-    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
-    "demo.android": "npm run preparedemo && cd demo && tns run android",
-    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-badge-button && tns plugin add .. && tns install",
-    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/simonox/nativescript-badge-button.git"
-  },
-  "keywords": [
-    "NativeScript",
-    "JavaScript",
-    "Android",
-    "iOS",
-    "Badge Button",
-    "BBBadgeBarButtonItem"
-  ],
-  "author": {
-    "name": "Sean Perkins",
-    "email": "sean@meetmaestro.com"
-  },
-  "contributors": [],
-  "bugs": {
-    "url": "https://github.com/sean-perkins/nativescript-badge-button/issues"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/sean-perkins/nativescript-badge-button",
-  "readmeFilename": "README.md",
-  "devDependencies": {
-    "tns-core-modules": "^2.2.0",
-    "tns-platform-declarations": "^2.2.0",
-    "typescript": "^1.8.10"
-  }
+    "name": "nativescript-badge-button",
+    "version": "0.1.2",
+    "description": "NativeScript plugin for badges inside of buttons.",
+    "main": "badgeButton",
+    "typings": "index.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "2.2.0",
+            "ios": "2.2.1"
+        },
+        "tns-ios": {
+            "version": "3.2.0"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "demo.ios": "npm run preparedemo && cd demo && tns run ios",
+        "demo.android": "npm run preparedemo && cd demo && tns run android",
+        "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-badge-button && tns plugin add .. && tns install",
+        "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/simonox/nativescript-badge-button.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "JavaScript",
+        "iOS",
+        "Badge Button"
+    ],
+    "author": {
+        "name": "Sean Perkins",
+        "email": "sean@meetmaestro.com"
+    },
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/sean-perkins/nativescript-badge-button/issues"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/sean-perkins/nativescript-badge-button",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "tns-core-modules": "^2.3.0",
+        "tns-platform-declarations": "^2.3.0",
+        "typescript": "^1.8.10"
+    },
+    "dependencies": {}
 }

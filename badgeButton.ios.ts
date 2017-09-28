@@ -1,6 +1,6 @@
 import { Button } from 'ui/button';
 
-declare var BBBadgeBarButtonItem: any;
+declare var UIBarButtonItem: any;
 
 export class BadgeButton extends Button {
 
@@ -30,7 +30,7 @@ export class BadgeButton extends Button {
 
     set badgeValue(badgeValue: string) {
         this._iosBadgeButton.badgeValue = badgeValue.toString();
-        if(this._lastBadgeOriginX) {
+        if (this._lastBadgeOriginX) {
             this._iosBadgeButton.badgeOriginX = this._lastBadgeOriginX;
         }
     }
@@ -43,7 +43,7 @@ export class BadgeButton extends Button {
         this._iosBadgeButton.badgeTextColor = badgeTextColor.ios;
     }
 
-    set badgeFont(badgeFont: UIFont) {
+    set badgeFont(badgeFont: any) {
         this._iosBadgeButton.badgeFont = badgeFont;
     }
 

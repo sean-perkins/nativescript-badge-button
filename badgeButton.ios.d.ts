@@ -7,7 +7,7 @@ export declare class BadgeButton extends Button {
     badgeValue: string;
     badgeBGColor: any;
     badgeTextColor: any;
-    badgeFont: UIFont;
+    badgeFont: any;
     badgePadding: number;
     badgeMinSize: number;
     badgeOriginX: number;

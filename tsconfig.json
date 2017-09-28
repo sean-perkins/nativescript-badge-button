@@ -8,12 +8,12 @@
         "declaration": true
     },
     "files": [
-      "node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "node_modules/tns-platform-declarations/tns-core-modules/android17.d.ts",
-      "node_modules/tns-platform-declarations/tns-core-modules/ios.d.ts",
-      "node_modules/tns-platform-declarations/tns-core-modules/org.nativescript.widgets.d.ts",
-      "badgeButton.android.ts",
-      "badgeButton.ios.ts"
+        "node_modules/tns-core-modules/tns-core-modules.d.ts",
+        "node_modules/tns-platform-declarations/android/android17.d.ts",
+        // "node_modules/tns-platform-declarations/ios/ios.d.ts",
+        // "node_modules/tns-platform-declarations/android/org.nativescript.widgets.d.ts",
+        "badgeButton.android.ts",
+        "badgeButton.ios.ts"
     ],
     "compileOnSave": false
 }
